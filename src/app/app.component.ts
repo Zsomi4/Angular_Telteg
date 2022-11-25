@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'telteg';
+  aSide !: number;
+  bSide !: number;
+
+  calcArea(): void {
+    let area = 2 * (this.aSide * this.bSide);
+  }
 }
