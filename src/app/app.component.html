@@ -7,14 +7,27 @@
  Github: https://github.com/Zsomi4/
  Licenc: GNU GPL
  -->
- <form>
-    <div class="mb-3">
-      <label for="" class="form-label">A oldal</label>
-      <input type="text" class="form-control">
+ <div class="container">
+    <h1>Feladat 0303</h1>
+    <h2>Gyepesítés</h2>
+    <div class="teltegform">
+      <div class="mb-3">
+        <label for="" class="form-label">A oldal</label>
+        <input type="text" class="form-control"
+        [(ngModel)]="aSide">
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="" class="form-label">B oldal</label>
+        <input type="text" class="form-control"
+        [(ngModel)]="bSide">
+      </div>
+      <button class="btn btn-success"
+      (click)="calcArea()">Számít</button>
+      <div class="mb-3">
+        <label for="result">Ennyi a telek területe</label>
+        <input type="text" class="form-control"
+        [(ngModel)]="doubleArea">
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="" class="form-label">B oldal</label>
-      <input type="text" class="form-control">
-    </div>
-    <button type="submit" class="btn btn-success">Számítás</button>
-  </form>
+   </div>
